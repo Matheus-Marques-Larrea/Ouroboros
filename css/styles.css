@@ -1,0 +1,565 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-size: 16px;
+  color: #ffd60a;
+  background: linear-gradient(to bottom, #001d3d, #000814);
+  scroll-behavior: smooth;
+}
+
+#barra.bar {
+  margin: 0;
+  font-family: "text";
+  background-color: #000814;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  opacity: 80%;
+}
+
+#barra.bar {
+  position: relative;
+}
+
+#lupa {
+  position: absolute;
+  right: 430px;
+  transform: scale(40%);
+}
+
+#lupa:hover {
+  cursor: pointer;
+  transform: scale(50%);
+  animation: lupaCrescer 0.3s ease-in-out forwards;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#barra.bar img {
+  height: 70px;
+  margin: 5px 5px 5px;
+}
+
+.logo {
+  animation: girar 4s linear infinite;
+}
+
+#barra.bar h1 {
+  position: absolute;
+  font-size: 30px;
+  margin: 0 80px 30px;
+}
+
+#barra.bar h2 {
+  font-size: 25px;
+  margin: 50px 5px 10px;
+}
+
+#barra.bar h3 {
+  position: absolute;
+  font-size: 18px;
+  color: #000814;
+  padding: 10px 30px;
+  padding-left: 10px;
+  padding-right: 500px;
+  right: 430px;
+  border-radius: 50px;
+  background-color: #ffd60a;
+}
+
+#barra.bar h3:hover {
+  cursor: text;
+}
+
+#login.bar h1 {
+  color: black;
+  background-color: #ffd60a;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  margin: -23px 50px;
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+#menu {
+  font-family: "text";
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu a:hover {
+  text-decoration: none;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 120px;
+  padding: 0;
+}
+
+#menu li {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 0.5px 15px;
+  border-radius: 8px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu li img {
+  width: 30px;
+  height: 30px;
+  margin-left: -5px;
+}
+
+#menu li:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  opacity: 75%;
+}
+
+.hero-text {
+  font-family: "text";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffd60a;
+  font-size: 40px;
+  opacity: 1000;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#promocoes.produtos {
+  font-family: "text";
+  text-align: center;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+.imgProd {
+  display: flex;
+  gap: 90px;
+  margin: 100px;
+
+}
+
+.imgProd img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.imgProd span {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.imgProd h3 {
+  margin-top: 5px;
+  color: gray;
+  text-decoration: line-through;
+  opacity: 70%;
+}
+
+.imgProd h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  padding-top: -30px;
+  color: lightgray;
+}
+
+.maisVendido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  background-color: black;
+  padding: 40px 0;
+}
+
+.maisVendido img {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  margin-left: 50px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+.maisVendido .info {
+  display: flex;
+  flex-direction: column;
+  color: #ffd60a;
+  font-family: "text";
+}
+
+.maisVendido .info h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.maisVendido .info h2 {
+  font-size: 35px;
+  color: lightgreen;
+  padding-top: 20px;
+  margin: 5px 0;
+  animation: salto 1s ease-in-out infinite
+}
+
+.maisVendido .info h3 {
+  font-size: 22px;
+  color: gray;
+}
+
+.maisVendido .info h4 {
+  font-size: 26px;
+  color: lightgray;
+}
+
+.maisVendido .nomeDireita {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "text";
+  color: white;
+  margin-left: 20px;
+}
+
+.maisVendido .nomeDireita h1 {
+  font-size: 70px;
+  color: #ffd60a;
+  margin: 0;
+}
+
+.maisVendido .nomeDireita span {
+  font-size: 33px;
+  color: lightgray;
+}
+
+#tituloespada.swordtitle {
+  font-family: "text";
+  font-size: 30px;
+  margin-left: 45px; 
+}
+
+#espadas.swords {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 50px;
+}
+
+#espadas.swords .espada-container {
+  display: flex;
+  justify-content: space-evenly; 
+  gap: 20px;
+  width: 100%; 
+  max-width: 1200px; 
+  flex-wrap: wrap; 
+}
+
+#espadas.swords div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; 
+  min-width: 250px; 
+}
+
+#espadas.swords img {
+  width: 100%; 
+  height: auto; 
+  max-width: 250px; 
+  object-fit: contain;
+}
+
+#espadas img:hover {
+  transform: scale(1.05);
+}
+
+#espadas.swords span {
+  font-family: "text";
+  font-size: 30px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+#espadas.swords h4 {
+  font-size: 25px;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  background-color: green;
+  animation: pulsar 1.5s infinite ease-in-out;
+}
+
+h4:hover {
+  cursor: pointer;
+}
+
+#titulokatanaz.titlekatana {
+  font-family: "text";
+  font-size: 30px;
+  margin-left: 45px;
+}
+
+#katanas.katanaz {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#katanas.katanaz .katana-container {
+  display: flex;
+  justify-content: space-evenly; 
+  gap: 20px;
+  width: 100%; 
+  max-width: 1200px; 
+  flex-wrap: wrap; 
+}
+
+#katanas.katanaz div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; 
+  min-width: 250px; 
+}
+
+#katanas.katanaz img {
+  width: 100%; 
+  height: auto; 
+  max-width: 250px; 
+  object-fit: contain;
+}
+
+#katanas img:hover {
+  transform: scale(1.05);
+}
+
+#katanas.katanaz span {
+  font-family: "text";
+  font-size: 30px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+#katanas.katanaz h4 {
+  font-size: 25px;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  background-color: green;
+  animation: pulsar 1.5s infinite ease-in-out;
+}
+
+#titulomachados.axetitle {
+  font-family: "text";
+  font-size: 30px;
+  margin-left: 45px;
+}
+
+#machados.axes {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 80px;
+}
+
+#machados.axes .machados-container {
+  display: flex;
+  justify-content: space-evenly; 
+  gap: 20px;
+  width: 100%; 
+  max-width: 1200px; 
+  flex-wrap: wrap; 
+}
+
+#machados.axes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; 
+  min-width: 250px; 
+}
+
+#machados.axes img {
+  width: 100%; 
+  height: auto; 
+  max-width: 250px; 
+  object-fit: contain;
+}
+
+#machados img:hover {
+  transform: scale(1.05);
+}
+
+#machados.axes span {
+  font-family: "text";
+  font-size: 30px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+#machados.axes h4 {
+  font-size: 25px;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  background-color: green;
+  animation: pulsar 1.5s infinite ease-in-out;
+}
+
+#tituloarmaduras.armortitle {
+  font-family: "text";
+  font-size: 30px;
+  margin-left: 45px;
+}
+
+#armaduras.armor {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 80px;
+}
+
+#armaduras.armor .armaduras-container {
+  display: flex;
+  justify-content: space-evenly; 
+  gap: 20px;
+  width: 100%; 
+  max-width: 1200px; 
+  flex-wrap: wrap; 
+}
+
+#armaduras.armor div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; 
+  min-width: 250px; 
+}
+
+#armaduras.armor img {
+  width: 100%; 
+  height: auto; 
+  max-width: 250px; 
+  object-fit: contain;
+}
+
+#armaduras img:hover {
+  transform: scale(1.05);
+}
+
+#armaduras.armor span {
+  font-family: "text";
+  font-size: 30px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+#armaduras.armor h4 {
+  font-size: 25px;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  background-color: green;
+  animation: pulsar 1.5s infinite ease-in-out;
+}
+
+footer {
+  background-color: black;
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}

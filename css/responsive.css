@@ -1,0 +1,146 @@
+@media screen and (max-width: 768px) {
+    #menu {
+      flex-direction: column;
+      align-items: center;
+      font-size: 25px;
+    }
+  
+    #menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    #lupa {
+      right: 50px;
+      transform: scale(50%);
+    }
+  
+    #login.bar h1 {
+      font-size: 20px;
+      right: 10px;
+      padding: 5px 10px;
+    }
+  
+    .imgProd {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin: 50px 20px;
+    }
+
+    .imgProd span {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      
+      .imgProd h3 {
+        margin-top: 5px;
+      }
+      
+      .imgProd h4 {
+        margin-top: 5px;
+        font-size: 20px;
+        margin-top: -30px;
+        color: lightgray;
+      }
+  
+    .maisVendido {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .maisVendido img {  
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    .maisVendido h1 {
+      text-align: center;  
+      font-size: 25px;
+    }
+  
+    .maisVendido span {
+      text-align: center;  
+      font-size: 25px;
+    }
+
+    #tituloespada.swordtitle, #titulokatanaz.titlekatana, #titulomachados.axetitle, #tituloarmaduras.armortitle {
+        text-align: center;
+        font-size: 30px;
+    } 
+  
+    #espadas.swords, #katanas.katanaz, #machados.axes, #armaduras.armor {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    #espadas.swords .espada-container,
+    #katanas.katanaz .katana-container,
+    #machados.axes .machados-container,
+    #armaduras.armor .armaduras-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #espadas.swords div,
+    #katanas.katanaz div,
+    #machados.axes div,
+    #armaduras.armor div {
+      width: 100%;
+    }
+
+    .footer-icons {
+      display: flex;
+      gap: 15px;
+    }
+  
+    .icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .copyright {
+      font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    
+    
+    #menu ul {
+        gap: 5px;
+        font-size: 14px; 
+        padding: 5px;
+      }
+    
+    #lupa {
+      right: 20px;
+      transform: scale(40%);
+    }
+    
+    .maisVendido {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+    
+    .maisVendido img {
+      width: 100%;
+      max-width: 200px;
+    }
+    
+    .maisVendido .info h1 {
+      text-align: center;  
+      font-size: 20px;
+    }
+    
+    .maisVendido .info h2 {
+      font-size: 18px;
+    }
+}
